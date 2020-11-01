@@ -3,34 +3,35 @@
 	<title>Form</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	
 	<script >
-
 		
 function validateForm(){
   var uname= document.forms["form"]["name"].value;
   var mail= document.forms["form"]["email"].value;
   var password= document.forms["form"]["password"].value;
   var password2= document.forms["form"]["password2"].value;
-}
+
 
 if(uname===""){
   alert("enter username");
-  return false;
+  //return false;
 }
 
 if(mail===""){
   alert("Enter your email");
-  return false;
+ // return false;
 }
 if(password===""){
   alert("Enter a valid password");
-  return false;
+  //return false;
 }
 if(paasword2!==password){
   alert("password doesn't match");
-  return false;
+  //return false;
 }
-
+return false;
+}
 	</script>
 </head>
 		<body>
