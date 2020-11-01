@@ -13,20 +13,24 @@ function validateForm(){
   var password2= document.forms["form"]["password2"].value;
 }
 
-if(uname==""){
+if(uname===""){
   alert("enter username");
+  return false;
 }
 
-if(mail==""){
+if(mail===""){
   alert("Enter your email");
+  return false;
 }
-if(password==""){
+if(password===""){
   alert("Enter a valid password");
+  return false;
 }
-if(paasword2!=password){
+if(paasword2!==password){
   alert("password doesn't match");
+  return false;
 }
-return false;
+
 	</script>
 </head>
 		<body>
